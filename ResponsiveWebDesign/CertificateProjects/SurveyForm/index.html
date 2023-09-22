@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FWC Workshop Registration Survey</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">FWC Workshop Registration Survey</h1>
+                <p id="description" class="description text-center">Please fill out this survey.</p>
+            </header>
+
+            <form id="survey-form">
+                <fieldset>
+                <div class="form-group">
+                    <label id="first-name-label" for="first-name">First Name</label>
+                    <input 
+                        type="text" 
+                        id="first-name" 
+                        name="first-name"
+                        class="form-control" 
+                        placeholder="Enter your name" 
+                        required 
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="last-name-label" for="last-name">Last Name</label>
+                    <input 
+                        type="text" 
+                        id="last-name" 
+                        name="last-name"
+                        class="form-control" 
+                        placeholder="Enter your last name" 
+                        required 
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        class="form-control" 
+                        placeholder="Enter your email" 
+                        required 
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="g-year-label" for="g-year">G-year</label>
+                    <input
+                        type="number"
+                        id="g-year"
+                        name="g-year"
+                        min="1"
+                        max="20"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="department-label" for="department">Department/Program</label>
+                    <select aria-label="select-department" id="department">
+                        <option>(Select one)</option>
+                        <option>African & African American Studies</option>
+                        <option>American Studies</option>
+                        <option>Anthropology</option>
+                        <option>Applied Mathematics</option>
+                        <option>Applied Physics</option>
+                        <option>Architecture, Landscape Architecture, & Urban Planning</option>
+                        <option>Astronomy</option>
+                        <option>Bioengineering</option>
+                        <option>Biological & Biomedical Sciences</option>
+                        <option>Biological Sciences in Public Health</option>
+                        <option>Biomedical Informatics</option>
+                        <option>Biophysics</option>
+                        <option>Biostatistics</option>
+                        <option>Business Administration</option>
+                        <option>Business Economics</option>
+                        <option>Byzantine Studies</option>
+                        <option>Celtic Languages & Literatures</option>
+                        <option>Chemical Biology</option>
+                        <option>Chemical Physics</option>
+                        <option>Chemistry & Chemical Biology</option>
+                        <option>Classics</option>
+                        <option>Comparative Literature</option>
+                        <option>Computational Science & Engineering</option>
+                        <option>Computer Science</option>
+                        <option>Data Science</option>
+                        <option>Earth & Planetary Sciences</option>
+                        <option>East Asian Languages & Civilizations</option>
+                        <option>Economics</option>
+                        <option>Education</option>
+                        <option>Electrical Engineering</option>
+                        <option>Engineering & Applied Sciences</option>
+                        <option>English</option>
+                        <option>Environmental Science & Engineering</option>
+                        <option>Film & Visual Studies</option>
+                        <option>Germanic Languages & Literatures</option>
+                        <option>Government</option>
+                        <option>Health Policy</option>
+                        <option>History</option>
+                        <option>History of Art & Architecture</option>
+                        <option>History of Science</option>
+                        <option>Human Evolutionary Biology</option>
+                        <option>Immunology</option>
+                        <option>Inner Asian & Altaic Studies</option>
+                        <option>Linguistics</option>
+                        <option>Materials Science & Mechanical Engineeering</option>
+                        <option>Mathematics</option>
+                        <option>Medical Sciences</option>
+                        <option>Middle Eastern Studies</option>
+                        <option>Molecular & Cellular Biology</option>
+                        <option>Music</option>
+                        <option>Near Eastern Languages & Civilizations</option>
+                        <option>Neuroscience</option>
+                        <option>Organismic & Evolutionary Biology</option>
+                        <option>Organizational Behavior</option>
+                        <option>Philosophy</option>
+                        <option>Physics</option>
+                        <option>Population Health Sciences</option>
+                        <option>Psychology</option>
+                        <option>Public Policy</option>
+                        <option>Quantum Science & Engineering</option>
+                        <option>Regional Studies - East Asia</option>
+                        <option>Regional Studies - Russia, Eastern Europe, & Central Asia</option>
+                        <option>Religion</option>
+                        <option>Romance Languages & Literatures</option>
+                        <option>Slavic Languages & Literatures</option>
+                        <option>Social Policy</option>
+                        <option>Sociology</option>
+                        <option>South Asian Studies</option>
+                        <option>Speech & Hearing Bioscience & Technology</option>
+                        <option>Statistics</option>
+                        <option>Systems, Synthetic, & Quantitative Biology</option>
+                        <option>Virology</option>
+                    </select>
+                </div>
+                </fieldset>
+                <fieldset>
+                <div class="form-group">
+                    <p>Is this your first time attending an FWC workshop?</p>
+                    <label for="yes"><input id="yes" type="radio" name="yes" class="inline" value="yes" /> Yes</label>
+                    <label for="no"><input id="no" type="radio" name="no" class="inline" value="no" /> No</label>
+                </div>
+                </fieldset>
+                <fieldset>
+                <div class="form-group">
+                    <p>How did you hear about this workshop?</p>
+                    <label for="newsletter"><input id="newsletter" type="checkbox" name="hear-about" class="inline" value="newsletter" /> FWC newsletter</label>
+                    <label for="website"><input id="website" type="checkbox" name="hear-about" class="inline" value="website" /> FWC website</label>
+                    <label for="engage"><input id="engage" type="checkbox" name="hear-about" class="inline" value="engage" /> Engage</label>
+                    <label for="dept-email"><input id="dept-email" type="checkbox" name="hear-about" class="inline" value="dept-email" /> Department email</label>
+                    <label for="gsas-social-email"><input id="gsas-social-email" type="checkbox" name="hear-about" class="inline" value="gsas-social-email" /> GSAS social media or email</label>
+                    <label for="word-of-mouth"><input id="word-of-mouth" type="checkbox" name="hear-about" class="inline" value="word-of-mouth" /> Word of mouth</label>
+                </div>
+                </fieldset>
+                <fieldset>
+                <div class="form-group">
+                    <label id="comments-label" for="comments">Any comments or suggestions? </label>
+                    <textarea id="comments" class="input-textarea" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+                </div>
+                </fieldset>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
